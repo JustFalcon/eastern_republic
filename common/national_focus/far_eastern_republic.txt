@@ -1,0 +1,521 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = far_eastern_republic_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FER
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 20 y = 4000 }
+
+	focus = {
+		id = FER_crisis_of_year
+		icon = GFX_focus_generic_improve_the_administration
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 0
+		#relative_position_id = 
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_ratify_constitution
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_crisis_of_year }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = FER_crisis_of_year
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_legalize_opposition
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_ratify_constitution }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = FER_ratify_constitution
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_economic_summit
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_crisis_of_year }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = FER_crisis_of_year
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_the_markov_report
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_crisis_of_year }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = FER_crisis_of_year
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_two_tigers
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_the_markov_report }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = FER_the_markov_report
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_heavy_urbanization
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_economic_summit }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = FER_economic_summit
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		mutually_exclusive = {
+			focus = FER_focus_agriculture
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_focus_agriculture
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_economic_summit }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = FER_economic_summit
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+
+		mutually_exclusive = {
+			focus = FER_heavy_urbanization
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_address_the_famine
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_focus_agriculture focus =FER_heavy_urbanization }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = FER_focus_agriculture
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_reopen_immigration
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_legalize_opposition }
+		prerequisite = { focus = FER_focus_agriculture focus = FER_heavy_urbanization }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = FER_legalize_opposition
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_revoke_state_of_emergency
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_two_tigers }
+		prerequisite = { focus = FER_focus_agriculture focus = FER_heavy_urbanization }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = FER_two_tigers
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FER_hold_elections
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = FER_reopen_immigration }
+		prerequisite = { focus = FER_address_the_famine }
+		prerequisite = { focus = FER_revoke_state_of_emergency }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = FER_crisis_of_year
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+
+		allow_branch = {
+
+		}
+	
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
+	
+		#complete_tooltip = {
+		#
+		#}
+	
+		completion_reward = {
+
+		}
+	}
+
+	
+}		
+
+
+

@@ -1,0 +1,115 @@
+ideas = {
+
+	country = {
+		FER_military_dominance_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = bul_zveno
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.05
+				political_power_factor = -0.10
+				neutrality_drift = 0.05
+			}
+		}
+		FER_masters_of_war = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = tfv_can_conscription_crisis
+
+			removal_cost = -1
+			
+			modifier = {
+				recruitable_population = 0.05
+				offensive_war_stability_factor = 0.3
+				defensive_war_stability_factor = 0.3
+				compliance_growth_on_our_occupied_states = -0.15
+				justify_war_goal_time = -0.75
+				planning_speed = 0.25	
+				compliance_gain = 0.15
+				resistance_decay = 0.15
+			}
+		}
+		FER_deadlocked_politics = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = EST_democratic_opposition
+
+			removal_cost = -1
+
+			modifier = {
+				disabled_ideas = 1
+				stability_factor = -0.15
+				political_power_factor = -0.15
+			}
+		}
+		FER_unemployment_crisis_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = EST_democratic_opposition
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				conscription_factor = 0.1
+				political_power_cost = 0.1
+				stability_factor = -0.15
+			}
+		}
+
+
+	}
+	industrial_concern = {
+				
+		siberian_railway_commision = {
+			
+			allowed = {
+				original_TAG = FER
+			}
+
+			cost = 0
+
+			allowed_to_remove = {
+				# has_completed_focus = FER_industrial_integration
+			}
+ 
+			
+			traits = { railway_company }
+
+			available = {
+				# has_completed_focus = FER_siberian_railway
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					# has_completed_focus = FER_trust_the_marshal
+					factor = 10
+				}
+			}
+		}
+	}	
+}
